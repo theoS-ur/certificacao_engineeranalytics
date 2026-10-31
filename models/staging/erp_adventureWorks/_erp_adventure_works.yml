@@ -1,0 +1,111 @@
+sources:
+  - name: erp
+    description: Este é o sistema erp da Adventure Works com dados de clientes, localidades, produtos e vendas
+    schema: adventure_works
+    tables:
+      - name: sales_customer
+        description: Tabela que contém informações de cliente como o id da pessoa ou loja
+        columns:
+          - name: customerid
+            description: chave primária da tabela de clientes
+            data_tests: 
+              - unique
+              - not_null
+
+      - name: sales_store
+        description: Tabela que contém informações das lojas clientes como nome
+        columns:
+            - name: businessentityid
+              description: chave primária da tabela de lojas
+              data_tests: 
+                - unique
+                - not_null
+     
+      - name: person_person
+        description: Tabela que contém informações das pessoas clientes como nome
+        columns:
+            - name: businessentityid
+              description: chave primária da tabela de pessoas
+              data_tests: 
+                - unique
+                - not_null
+
+      - name: person_address
+        description: Tabela que contém informações dos endereços como nome da rua, cidade e id da provincia
+        columns:
+            - name: addressid
+              description: chave primária da tabela de endereços
+              data_tests: 
+                - unique
+                - not_null
+      - name: person_stateprovince
+        description: Tabela que contém informações das provincias como nome e  codigo do país
+        columns:
+            - name: stateprovinceid
+              description: chave primária da tabela de províncias
+              data_tests: 
+                - unique
+                - not_null
+      - name: person_countryregion
+        description: Tabela que contém informações dos paises como nome
+        columns:
+            - name: countryregioncode
+              description: chave primária da tabela de países
+              data_tests: 
+                - unique
+                - not_null
+
+      - name: production_product
+        description: Tabela que contém informações dos produtos como nome e numero
+        columns:
+            - name: productid
+              description: chave primária da tabela de produtos
+              data_tests: 
+                - unique
+                - not_null
+      - name: production_productsubcategory
+        description: Tabela que contém informações das subcategorias dos produtos 
+        columns:
+            - name: productsubcategoryid
+              description: chave primária da tabela de subcategoria de produtos
+              data_tests: 
+                - unique
+                - not_null
+      - name: production_productcategory
+        description: Tabela que contém informações das subcategorias dos produtos 
+        columns:
+            - name: productcategoryid
+              description: chave primária da tabela das categorias dos produtos
+              data_tests: 
+                - unique
+                - not_null
+
+      
+      - name: sales_salesorderheader
+        description: Tabela que contém informações gerais das vendas como datas de pedido, entrega e prazo, endereço de cobrança e entrega, valor da venda, frete e taxa
+        columns:
+            - name: salesorderid
+              description: chave primária da tabela de vendas
+              data_tests: 
+                - unique
+                - not_null
+      - name: sales_salesorderdetail
+        description: Tabela que contém informações detalhadas das vendas com quais produtos foram vendidos, quantidade e preços unitarios e de desconto 
+        columns:
+            - name: salesorderdetailid
+              description: chave primária da tabela de vendas detalhadas
+              data_tests: 
+                - unique
+                - not_null
+
+      - name: sales_salesorderheadersalesreason
+        description: Tabela que liga as compras com seus motivos
+
+      - name: sales_salesreason
+        description: Tabela que contém informações dos motivos das compras   
+        columns:
+            - name: salesreasonid
+              description: chave primária da tabela de motivode venda
+              data_tests: 
+                - unique
+                - not_null
