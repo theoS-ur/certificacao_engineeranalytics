@@ -1,3 +1,3 @@
 select *
-from {{source('erp', 'sales_salesorderheader')}}
-order by customerid
+from {{source('erp', 'person_person')}}
+where businessentityid = 291
