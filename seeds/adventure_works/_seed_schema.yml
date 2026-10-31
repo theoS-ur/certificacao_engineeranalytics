@@ -1,0 +1,5 @@
+seeds:
+  - name: person_countryregion
+    config:
+      column_types:
+        countryregioncode: string
