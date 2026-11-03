@@ -1,0 +1,15 @@
+models:
+         - name: dim_salesorder
+           description: ""
+           columns:
+             - name: pk_salesorder
+               data_type: int
+               description: ""
+       
+             - name: order_status
+               data_type: bigint
+               description: ""
+       
+             - name: is_online
+               data_type: boolean
+               description: ""

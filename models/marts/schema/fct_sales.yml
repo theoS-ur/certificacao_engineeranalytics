@@ -1,0 +1,138 @@
+ models:
+         - name: fct_sales
+           description: ""
+           columns:
+             - name: pk_sales
+               data_type: int
+               description: ""
+       
+             - name: fk_salesorder
+               data_type: int
+               description: ""
+               data_tests:
+                 - relationships:
+                      arguments: 
+                        to: ref('dim_salesorder')
+                        field: pk_salesorder
+       
+             - name: fk_product
+               data_type: int
+               description: ""
+               data_tests:
+                 - relationships:
+                      arguments: 
+                        to: ref('dim_product')
+                        field: pk_product
+       
+             - name: fk_customer
+               data_type: int
+               description: ""
+               data_tests:
+                  - relationships:
+                        arguments:
+                          to: ref('dim_customer')
+                          field: pk_customer
+             
+             - name: fk_creditcard
+               data_type: int
+               description: ""
+               data_tests:
+                  - relationships:
+                        arguments:
+                          to: ref('dim_creditcard')
+                          field: pk_creditcard
+
+             - name: fk_order_date
+               data_type: int
+               description: ""
+               data_tests:
+                 - relationships: 
+                      arguments: 
+                        to: ref('dim_date')
+                        field: pk_data
+       
+             - name: fk_ship_date
+               data_type: int
+               description: ""
+               data_tests:
+                 - relationships: 
+                      arguments: 
+                       to: ref('dim_date')
+                       field: pk_data
+       
+       
+             - name: fk_due_date
+               data_type: int
+               description: ""
+               data_tests:
+                 - relationships: 
+                      arguments: 
+                       to: ref('dim_date')
+                       field: pk_data
+       
+       
+             - name: fk_ship_to_address
+               data_type: int
+               description: ""
+               data_tests:
+                 - relationships: 
+                      arguments: 
+                         to: ref('dim_address')
+                         field: pk_address
+       
+             - name: fk_bill_to_address
+               data_type: int
+               description: ""
+               data_tests:
+                 - relationships: 
+                      arguments: 
+                         to: ref('dim_address')
+                         field: pk_address
+             
+             - name: order_date
+               data_type: date
+               description: ""
+
+             - name: ship_date
+               data_type: date
+               description: ""  
+
+             - name: due_date
+               data_type: date
+               description: ""  
+       
+             - name: order_qty
+               data_type: bigint
+               description: ""
+       
+             - name: unit_price
+               data_type: double
+               description: ""
+       
+             - name: gross_price
+               data_type: double
+               description: ""
+       
+             - name: unit_price_discount
+               data_type: double
+               description: ""
+       
+             - name: unit_price_discount_pct
+               data_type: double
+               description: ""
+       
+             - name: net_price
+               data_type: double
+               description: ""
+       
+             - name: freight
+               data_type: double
+               description: ""
+       
+             - name: tax
+               data_type: double
+               description: ""
+       
+             - name: total_price
+               data_type: double
+               description: ""

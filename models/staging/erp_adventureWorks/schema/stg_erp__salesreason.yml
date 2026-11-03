@@ -1,0 +1,15 @@
+ models:
+         - name: stg_erp__salesreason
+           description: ""
+           columns:
+             - name: pk_reason
+               data_type: int
+               description: ""
+       
+             - name: reason_name
+               data_type: string
+               description: ""
+       
+             - name: reasontype
+               data_type: string
+               description: ""

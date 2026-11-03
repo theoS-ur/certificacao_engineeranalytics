@@ -8,11 +8,13 @@ with
         select    
             cast(salesorderid as int) as pk_salesorderheader
             ,cast(customerid as int) as fk_customer
+            ,cast(creditcardid as int) as fk_creditcard
             ,cast(billtoaddressid as int) as fk_billtoaddress
             ,cast(shiptoaddressid as int) as fk_shiptoaddress
             ,cast(orderdate as date) as order_date
             ,cast(duedate as date) as due_date
             ,cast(orderdate as date) as ship_date
+            ,salesorderheader.status as order_status
             ,onlineorderflag
             ,subtotal
             ,taxamt
@@ -24,3 +26,4 @@ with
 
 select *
 from renomeado
+

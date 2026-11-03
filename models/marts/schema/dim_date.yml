@@ -1,9 +1,35 @@
 models:
-  - name: dim_clientes
-    description:
-    columns:
-      - name:
-        description:
-      
-      - name:
-        description:
+         - name: dim_date
+           description: ""
+           columns:
+             - name: pk_data
+               data_type: int
+               description: ""
+       
+             - name: _data
+               data_type: date
+               description: ""
+       
+             - name: dia
+               data_type: int
+               description: ""
+       
+             - name: mes
+               data_type: int
+               description: ""
+       
+             - name: ano
+               data_type: int
+               description: ""
+       
+             - name: trimestre
+               data_type: int
+               description: ""
+       
+             - name: dia_da_semana
+               data_type: string
+               description: ""
+       
+             - name: is_final_de_semana
+               data_type: boolean
+               description: ""

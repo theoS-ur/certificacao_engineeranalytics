@@ -1,9 +1,23 @@
-models:
-  - name: dim_clientes
-    description:
-    columns:
-      - name:
-        description:
-      
-      - name:
-        description:
+ models:
+         - name: bridge_salesorderreason
+           description: ""
+           columns:
+             - name: fk_sales_order_header
+               data_type: int
+               description: ""
+               data_tests:
+                  - not_null
+                  - relationships: 
+                      arguments: 
+                        to: ref('dim_salesorder')
+                        field: pk_salesorder
+       
+             - name: fk_sales_reason
+               data_type: int
+               description: ""
+               tests:
+                 - not_null
+                 - relationships:
+                      arguments:
+                        to: ref('dim_salesreason')
+                        field: pk_sales_reason

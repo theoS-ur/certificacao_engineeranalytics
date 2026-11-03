@@ -1,0 +1,11 @@
+models:
+         - name: stg_erp__country
+           description: ""
+           columns:
+             - name: pk_country
+               data_type: string
+               description: ""
+       
+             - name: country_name
+               data_type: string
+               description: ""

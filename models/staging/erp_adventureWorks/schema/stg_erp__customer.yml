@@ -1,0 +1,19 @@
+models:
+         - name: stg_erp__customer
+           description: ""
+           columns:
+             - name: pk_customer
+               data_type: int
+               description: ""
+       
+             - name: fk_person
+               data_type: int
+               description: ""
+       
+             - name: fk_store
+               data_type: int
+               description: ""
+       
+             - name: fk_territory
+               data_type: int
+               description: ""

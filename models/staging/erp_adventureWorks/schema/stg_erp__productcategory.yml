@@ -1,0 +1,11 @@
+models:
+         - name: stg_erp__productcategory
+           description: ""
+           columns:
+             - name: pk_productcategory
+               data_type: int
+               description: ""
+       
+             - name: productcategory_name
+               data_type: string
+               description: ""
