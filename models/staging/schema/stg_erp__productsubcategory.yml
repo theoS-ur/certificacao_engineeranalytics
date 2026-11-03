@@ -1,9 +1,0 @@
-models:
-  - name: dim_clientes
-    description:
-    columns:
-      - name:
-        description:
-      
-      - name:
-        description:

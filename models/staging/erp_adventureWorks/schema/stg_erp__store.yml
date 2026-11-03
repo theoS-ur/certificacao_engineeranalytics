@@ -1,0 +1,11 @@
+models:
+         - name: stg_erp__store
+           description: ""
+           columns:
+             - name: pk_store
+               data_type: int
+               description: ""
+       
+             - name: store_name
+               data_type: string
+               description: ""

@@ -33,20 +33,24 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
   Analytics: # <-- Name of the project. If you renamed your project you have to change this as well
-    +catalog: fea_academy
     staging:
-      +schema: adventure_works
+      +schema: staging
+      +materialized: view
+      erp_adventure_works:
+        +materialized: table
     
     intermediate:
-      +schema: adventure_works
+      +schema: intermediate
+      +materialized: view
 
     marts:
-      +schema: adventure_works
+      +schema: marts
+      +materialized: table
 
 
 seeds:
   
   Analytics: # <-- Name of the project. If you renamed your project you have to change this as well
     adventure_works:
-      +schema: adventure_works
-      +enabled: true
+      +schema: erp_adventure_works
+      +enabled: false

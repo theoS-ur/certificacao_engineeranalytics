@@ -1,0 +1,11 @@
+models:
+         - name: stg_erp__salesorderheadersalesreason
+           description: ""
+           columns:
+             - name: fk_reason
+               data_type: int
+               description: ""
+       
+             - name: fk_salesorderheader
+               data_type: int
+               description: ""

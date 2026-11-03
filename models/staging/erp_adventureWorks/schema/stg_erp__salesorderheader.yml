@@ -1,0 +1,59 @@
+ models:
+         - name: stg_erp__salesorderheader
+           description: ""
+           columns:
+             - name: pk_salesorderheader
+               data_type: int
+               description: ""
+       
+             - name: fk_customer
+               data_type: int
+               description: ""
+       
+             - name: fk_creditcard
+               data_type: int
+               description: ""
+       
+             - name: fk_billtoaddress
+               data_type: int
+               description: ""
+       
+             - name: fk_shiptoaddress
+               data_type: int
+               description: ""
+       
+             - name: order_date
+               data_type: date
+               description: ""
+       
+             - name: due_date
+               data_type: date
+               description: ""
+       
+             - name: ship_date
+               data_type: date
+               description: ""
+
+             - name: order_status
+               data_type: int
+               description: "" 
+       
+             - name: onlineorderflag
+               data_type: boolean
+               description: ""
+       
+             - name: subtotal
+               data_type: double
+               description: ""
+       
+             - name: taxamt
+               data_type: double
+               description: ""
+       
+             - name: freight
+               data_type: double
+               description: ""
+       
+             - name: totaldue
+               data_type: double
+               description: ""

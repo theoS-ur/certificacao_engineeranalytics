@@ -1,0 +1,19 @@
+models:
+         - name: stg_erp__address
+           description: ""
+           columns:
+             - name: pk_address
+               data_type: int
+               description: ""
+       
+             - name: fk_province
+               data_type: int
+               description: ""
+       
+             - name: full_address
+               data_type: string
+               description: ""
+       
+             - name: city
+               data_type: string
+               description: ""

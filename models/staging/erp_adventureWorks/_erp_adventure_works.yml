@@ -100,11 +100,26 @@ sources:
 
       - name: sales_salesorderheadersalesreason
         description: Tabela que liga as compras com seus motivos
+        data_tests:
+          - dbt_utils.unique_combination_of_columns:
+              arguments:  
+                combination_of_columns:
+                  - salesorderid
+                  - salesreasonid
 
       - name: sales_salesreason
         description: Tabela que contém informações dos motivos das compras   
         columns:
             - name: salesreasonid
+              description: chave primária da tabela de motivode venda
+              data_tests: 
+                - unique
+                - not_null
+        
+      - name: sales_creditcard
+        description: Tabela que contém informações dos motivos das compras   
+        columns:
+            - name: creditcardid
               description: chave primária da tabela de motivode venda
               data_tests: 
                 - unique

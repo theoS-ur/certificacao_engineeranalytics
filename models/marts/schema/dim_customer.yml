@@ -1,9 +1,15 @@
 models:
-  - name: dim_clientes
-    description:
-    columns:
-      - name:
-        description:
-      
-      - name:
-        description:
+         - name: dim_customer
+           description: ""
+           columns:
+             - name: pk_customer
+               data_type: int
+               description: ""
+       
+             - name: person_id
+               data_type: int
+               description: ""
+       
+             - name: person_name
+               data_type: string
+               description: ""

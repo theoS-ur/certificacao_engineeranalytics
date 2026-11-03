@@ -1,0 +1,19 @@
+  models:
+         - name: stg_erp__province
+           description: ""
+           columns:
+             - name: pk_province
+               data_type: int
+               description: ""
+       
+             - name: fk_country
+               data_type: string
+               description: ""
+       
+             - name: fk_territory
+               data_type: int
+               description: ""
+       
+             - name: province_name
+               data_type: string
+               description: ""

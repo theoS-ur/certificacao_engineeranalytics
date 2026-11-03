@@ -1,0 +1,31 @@
+  models:
+         - name: stg_erp__salesorderdetail
+           description: ""
+           columns:
+             - name: pk_salesorderdetail
+               data_type: int
+               description: ""
+       
+             - name: fk_salesorderheader
+               data_type: int
+               description: ""
+       
+             - name: fk_product
+               data_type: int
+               description: ""
+       
+             - name: fk_specialoffer
+               data_type: int
+               description: ""
+       
+             - name: orderqty
+               data_type: bigint
+               description: ""
+       
+             - name: unitprice
+               data_type: double
+               description: ""
+       
+             - name: unitpricediscount
+               data_type: double
+               description: ""

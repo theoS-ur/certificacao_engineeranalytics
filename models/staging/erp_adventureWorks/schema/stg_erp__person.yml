@@ -1,0 +1,15 @@
+models:
+         - name: stg_erp__person
+           description: ""
+           columns:
+             - name: pk_person
+               data_type: int
+               description: ""
+       
+             - name: person_name
+               data_type: string
+               description: ""
+       
+             - name: emailpromotion
+               data_type: bigint
+               description: ""

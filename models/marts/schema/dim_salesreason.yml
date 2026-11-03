@@ -1,9 +1,15 @@
 models:
-  - name: dim_clientes
-    description:
-    columns:
-      - name:
-        description:
-      
-      - name:
-        description:
+         - name: dim_salesreason
+           description: ""
+           columns:
+             - name: pk_sales_reason
+               data_type: int
+               description: ""
+       
+             - name: sales_reason_name
+               data_type: string
+               description: ""
+       
+             - name: sales_reason_type
+               data_type: string
+               description: ""

@@ -1,9 +1,23 @@
-models:
-  - name: dim_clientes
-    description:
-    columns:
-      - name:
-        description:
-      
-      - name:
-        description:
+ models:
+         - name: dim_product
+           description: ""
+           columns:
+             - name: pk_product
+               data_type: int
+               description: ""
+       
+             - name: product_name
+               data_type: string
+               description: ""
+       
+             - name: product_number
+               data_type: string
+               description: ""
+       
+             - name: productcategory_name
+               data_type: string
+               description: ""
+       
+             - name: productsubcategoy_name
+               data_type: string
+               description: ""

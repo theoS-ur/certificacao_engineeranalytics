@@ -11,7 +11,7 @@
 
             {{ default_schema }}
         
-        {%- elif custom_schema_name == 'adventure_works' -%}
+        {%- elif custom_schema_name == 'erp_adventure_works' -%}
 
             {{ custom_schema_name | trim }}
 

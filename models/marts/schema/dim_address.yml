@@ -1,9 +1,23 @@
-models:
-  - name: dim_clientes
-    description:
-    columns:
-      - name:
-        description:
-      
-      - name:
-        description:
+ models:
+         - name: dim_address
+           description: ""
+           columns:
+             - name: pk_address
+               data_type: int
+               description: ""
+       
+             - name: full_address
+               data_type: string
+               description: ""
+       
+             - name: city_name
+               data_type: string
+               description: ""
+       
+             - name: province_name
+               data_type: string
+               description: ""
+       
+             - name: country_name
+               data_type: string
+               description: ""
