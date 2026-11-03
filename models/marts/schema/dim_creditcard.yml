@@ -1,23 +1,23 @@
 models:
-         - name: dim_creditcard
-           description: ""
-           columns:
-             - name: pk_creditcard
-               data_type: int
-               description: ""
-       
-             - name: card_type
-               data_type: string
-               description: ""
-       
-             - name: card_number
-               data_type: string
-               description: ""
-       
-             - name: exp_month
-               data_type: bigint
-               description: ""
-       
-             - name: exp_year
-               data_type: bigint
-               description: ""
+  - name: dim_creditcard
+    description: ""
+    columns:
+      - name: pk_creditcard
+        data_type: int
+        description: ""
+
+      - name: card_type
+        data_type: string
+        description: ""
+
+      - name: card_number
+        data_type: string
+        description: ""
+
+      - name: exp_month
+        data_type: bigint
+        description: ""
+
+      - name: exp_year
+        data_type: bigint
+        description: ""

@@ -53,4 +53,3 @@ with
 select *
 from salesorderdetail_enriquecido
 
-
