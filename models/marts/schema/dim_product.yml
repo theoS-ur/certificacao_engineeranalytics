@@ -1,23 +1,23 @@
  models:
          - name: dim_product
-           description: ""
+           description: "Dimensão de produtos"
            columns:
              - name: pk_product
                data_type: int
-               description: ""
+               description: "Chave primária"
        
              - name: product_name
                data_type: string
-               description: ""
+               description: "Nome do produto"
        
              - name: product_number
                data_type: string
-               description: ""
+               description: "Número do produto"
        
              - name: productcategory_name
                data_type: string
-               description: ""
+               description: "Categoria do produto"
        
              - name: productsubcategoy_name
                data_type: string
-               description: ""
+               description: "Subcategoria do produto"

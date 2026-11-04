@@ -1,23 +1,23 @@
- models:
-         - name: dim_address
-           description: ""
-           columns:
-             - name: pk_address
-               data_type: int
-               description: ""
-       
-             - name: full_address
-               data_type: string
-               description: ""
-       
-             - name: city_name
-               data_type: string
-               description: ""
-       
-             - name: province_name
-               data_type: string
-               description: ""
-       
-             - name: country_name
-               data_type: string
-               description: ""
+models:
+  - name: dim_address
+    description: "Dimensão de localidades"
+    columns:
+      - name: pk_address
+        data_type: int
+        description: "Cahve primária"
+
+      - name: full_address
+        data_type: string
+        description: "Endereço completo com rua e número"
+
+      - name: city_name
+        data_type: string
+        description: "Nome da cidade"
+
+      - name: province_name
+        data_type: string
+        description: "Nome do estado"
+
+      - name: country_name
+        data_type: string
+        description: "Nome do país"

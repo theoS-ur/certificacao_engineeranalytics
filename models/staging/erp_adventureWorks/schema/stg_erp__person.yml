@@ -1,15 +1,11 @@
 models:
          - name: stg_erp__person
-           description: ""
+           description: "Tabela de pessoas que contém o nome e id de cada pessoa como clientes, e funcionários"
            columns:
              - name: pk_person
                data_type: int
-               description: ""
+               description: "Chave primária"
        
              - name: person_name
                data_type: string
-               description: ""
-       
-             - name: emailpromotion
-               data_type: bigint
-               description: ""
+               description: "Nome da pessoa"

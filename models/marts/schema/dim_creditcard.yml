@@ -1,23 +1,23 @@
 models:
   - name: dim_creditcard
-    description: ""
+    description: "Dimensão de cartões"
     columns:
       - name: pk_creditcard
         data_type: int
-        description: ""
+        description: "Chave primária"
 
       - name: card_type
         data_type: string
-        description: ""
+        description: "Tipo do cartão"
 
       - name: card_number
         data_type: string
-        description: ""
+        description: "Número do cartão"
 
       - name: exp_month
         data_type: bigint
-        description: ""
+        description: "Mes de válidade"
 
       - name: exp_year
         data_type: bigint
-        description: ""
+        description: "Ano de válidade"

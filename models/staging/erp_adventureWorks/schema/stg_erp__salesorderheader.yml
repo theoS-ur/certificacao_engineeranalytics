@@ -1,59 +1,59 @@
  models:
          - name: stg_erp__salesorderheader
-           description: ""
+           description: "Tabela com informações gerais de cada venda"
            columns:
              - name: pk_salesorderheader
                data_type: int
-               description: ""
+               description: "Chave primária"
        
              - name: fk_customer
                data_type: int
-               description: ""
+               description: "Chave estrangeira de clientes"
        
              - name: fk_creditcard
                data_type: int
-               description: ""
+               description: "Chave estrangeira de cartões"
        
              - name: fk_billtoaddress
                data_type: int
-               description: ""
+               description: "Chave estrangeira de endereço de cobrança"
        
              - name: fk_shiptoaddress
                data_type: int
-               description: ""
+               description: "Chave estrangeira de endereço de entrega"
        
              - name: order_date
                data_type: date
-               description: ""
+               description: "Chave estrangeira de data do pedido"
        
              - name: due_date
                data_type: date
-               description: ""
+               description: "Chave estrangeira de prazo de entrega"
        
              - name: ship_date
                data_type: date
-               description: ""
+               description: "Chave estrangeira de data de entrega"
 
              - name: order_status
                data_type: int
-               description: "" 
+               description: "Status da ordem" 
        
              - name: onlineorderflag
                data_type: boolean
-               description: ""
+               description: "Confere se a ordem foi online"
        
              - name: subtotal
                data_type: double
-               description: ""
+               description: "Total antes das taxas e frete"
        
              - name: taxamt
                data_type: double
-               description: ""
+               description: "Valor da taxa"
        
              - name: freight
                data_type: double
-               description: ""
+               description: "Valor do frete"
        
              - name: totaldue
                data_type: double
-               description: ""
+               description: "Valor total da venda"

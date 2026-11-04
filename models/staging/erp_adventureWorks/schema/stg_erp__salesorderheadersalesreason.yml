@@ -1,11 +1,11 @@
 models:
          - name: stg_erp__salesorderheadersalesreason
-           description: ""
+           description: "Tabela que liga id do motivo de compra e id da venda"
            columns:
              - name: fk_reason
                data_type: int
-               description: ""
+               description: "Chave primária"
        
              - name: fk_salesorderheader
                data_type: int
-               description: ""
+               description: "Chave estrangeira de vendas gerais"

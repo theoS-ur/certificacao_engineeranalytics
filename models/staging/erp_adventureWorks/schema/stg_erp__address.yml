@@ -1,19 +1,19 @@
 models:
          - name: stg_erp__address
-           description: ""
+           description: "Tabela de endereços com rua e id do estado"
            columns:
              - name: pk_address
                data_type: int
-               description: ""
+               description: "Chave primária"
        
              - name: fk_province
                data_type: int
-               description: ""
+               description: "chave estrangeira dos estados"
        
              - name: full_address
                data_type: string
-               description: ""
+               description: "Rua e Número"
        
              - name: city
                data_type: string
-               description: ""
+               description: "Nome da cidade"

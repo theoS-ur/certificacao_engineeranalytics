@@ -1,19 +1,19 @@
  models:
          - name: stg_erp__products
-           description: ""
+           description: "Tabela que contém informações dos produtos como nome e número"
            columns:
              - name: pk_product
                data_type: int
-               description: ""
+               description: "Chave primária"
        
              - name: fk_productsubcategory
                data_type: int
-               description: ""
+               description: "Chave estrangeira da subcategoria dos produtos"
        
              - name: product_name
                data_type: string
-               description: ""
+               description: "Nome do produto"
        
              - name: product_number
                data_type: string
-               description: ""
+               description: "Número do produto"

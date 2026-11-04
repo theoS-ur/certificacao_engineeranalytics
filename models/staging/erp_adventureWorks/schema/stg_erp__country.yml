@@ -1,11 +1,11 @@
 models:
          - name: stg_erp__country
-           description: ""
+           description: "Tabela com informações dos países"
            columns:
              - name: pk_country
                data_type: string
-               description: ""
+               description: "Chave primária"
        
              - name: country_name
                data_type: string
-               description: ""
+               description: "Nome do país"

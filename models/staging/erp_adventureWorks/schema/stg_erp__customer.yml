@@ -1,19 +1,19 @@
 models:
          - name: stg_erp__customer
-           description: ""
+           description: "Tabela com id do cliente"
            columns:
              - name: pk_customer
                data_type: int
-               description: ""
+               description: "Chave primária"
        
              - name: fk_person
                data_type: int
-               description: ""
+               description: "Chave estrangeira da tabela de pessoas"
        
              - name: fk_store
                data_type: int
-               description: ""
+               description: "Chave estrangeira da tabela de lojas"
        
              - name: fk_territory
                data_type: int
-               description: ""
+               description: "Chave estrangeira do território do cliente"

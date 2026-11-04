@@ -1,35 +1,38 @@
  models:
          - name: int_dimensao_date
-           description: ""
+           description: "Tabela intermediária de datas"
            columns:
-             - name: pk_data
+             - name: pk_date
                data_type: int
-               description: ""
+               description: "Chave primária"
+               data_tests:
+                 - unique
+                 - not_null
        
-             - name: _data
+             - name: _date
                data_type: date
-               description: ""
+               description: "Data completa"
        
-             - name: dia
+             - name: _day
                data_type: int
-               description: ""
+               description: "dia"
        
-             - name: mes
+             - name: _month
                data_type: int
-               description: ""
+               description: "Mês"
        
-             - name: ano
+             - name: _year
                data_type: int
-               description: ""
+               description: "Ano"
        
-             - name: trimestre
+             - name: _quarter
                data_type: int
-               description: ""
+               description: "Trimestre"
        
-             - name: dia_da_semana
+             - name: day_of_the_week
                data_type: string
-               description: ""
+               description: "Dia da semana"
        
-             - name: is_final_de_semana
+             - name: is_weekend
                data_type: boolean
-               description: ""
+               description: "Confere se é final de semana"

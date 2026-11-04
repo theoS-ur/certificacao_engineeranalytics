@@ -1,11 +1,11 @@
 models:
          - name: stg_erp__store
-           description: ""
+           description: "Tabela com informações das lojas"
            columns:
              - name: pk_store
                data_type: int
-               description: ""
+               description: "Chave primária"
        
              - name: store_name
                data_type: string
-               description: ""
+               description: "Nome da loja"

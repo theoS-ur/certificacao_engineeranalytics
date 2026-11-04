@@ -1,35 +1,35 @@
 models:
-         - name: dim_date
-           description: ""
-           columns:
-             - name: pk_data
-               data_type: int
-               description: ""
-       
-             - name: _data
-               data_type: date
-               description: ""
-       
-             - name: dia
-               data_type: int
-               description: ""
-       
-             - name: mes
-               data_type: int
-               description: ""
-       
-             - name: ano
-               data_type: int
-               description: ""
-       
-             - name: trimestre
-               data_type: int
-               description: ""
-       
-             - name: dia_da_semana
-               data_type: string
-               description: ""
-       
-             - name: is_final_de_semana
-               data_type: boolean
-               description: ""
+  - name: dim_date
+    description: "Dimensão de datas"
+    columns:
+      - name: pk_date
+        data_type: int
+        description: "Chave primária"
+
+      - name: _date
+        data_type: date
+        description: "Data completa"
+
+      - name: _day
+        data_type: int
+        description: "dia"
+
+      - name: _month
+        data_type: int
+        description: "Mês"
+
+      - name: _year
+        data_type: int
+        description: "Ano"
+
+      - name: _quarter
+        data_type: int
+        description: "Trimestre"
+
+      - name: day_of_the_week
+        data_type: string
+        description: "Dia da semana"
+
+      - name: is_weekend
+        data_type: boolean
+        description: "Confere se é final de semana"
