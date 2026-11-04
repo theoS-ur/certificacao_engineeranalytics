@@ -9,12 +9,12 @@ with
     )
     , criar_datas as (
         select
-           cast(date_format(date_day,'yyyyMMdd') as int) as pk_data
-            , cast( date_day as date) as _data
-            , extract(day from date_day) as dia
-            , extract(month from date_day) as mes
-            , extract(year from date_day) as ano
-            , extract(quarter from date_day) as trimestre
+           cast(date_format(date_day,'yyyyMMdd') as int) as pk_date
+            , cast( date_day as date) as _date
+            , extract(day from date_day) as _day
+            , extract(month from date_day) as _month
+            , extract(year from date_day) as _year
+            , extract(quarter from date_day) as _quarter
             , case dayofweek(date_day)
                 when 1 then 'Domingo'
                 when 2 then 'Segunda'
@@ -23,11 +23,11 @@ with
                 when 5 then 'Quinta'
                 when 6 then 'Sexta'
                 when 7 then 'Sábado'
-            end as dia_da_semana
+            end as day_of_the_week
             , case
                 when extract(dow from date_day) in (1,7) then true
                 else false
-            end as is_final_de_semana
+            end as is_weekend
 
         from date_spine
 

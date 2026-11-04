@@ -1,15 +1,15 @@
  models:
          - name: stg_erp__productsubcategory
-           description: ""
+           description: "Tabela de subcategorias dos produtos"
            columns:
              - name: pk_productsubcategory
                data_type: int
-               description: ""
+               description: "Chave primária"
        
              - name: fk_productcategory
                data_type: int
-               description: ""
+               description: "Chave estangeira das categorias dos produtos"
        
              - name: productsubcategory_name
                data_type: string
-               description: ""
+               description: "Nome da subcategoria"

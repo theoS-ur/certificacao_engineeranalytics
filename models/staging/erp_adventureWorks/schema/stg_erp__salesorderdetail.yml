@@ -1,35 +1,35 @@
   models:
          - name: stg_erp__salesorderdetail
-           description: ""
+           description: "Tabela com informações detalhadas das vendas com produtos vendidos sua qunatidade, preço e desconto"
            columns:
              - name: pk_salesorderdetail
                data_type: int
-               description: ""
+               description: "Chave primária"
        
              - name: fk_salesorderheader
                data_type: int
-               description: ""
+               description: "Chave estrangeira de vendas gerais"
        
              - name: fk_product
                data_type: int
-               description: ""
+               description: "Chave estrangeira de produtos"
        
              - name: fk_specialoffer
                data_type: int
-               description: ""
+               description: "chave estrangeira de oferta especial"
        
              - name: orderqty
                data_type: bigint
-               description: ""
+               description: "Quantidade vendia do produto"
        
              - name: unitprice
                data_type: double
-               description: ""
+               description: "Preço de unidade do produto"
        
              - name: unitpricediscount
                data_type: double
-               description: ""
+               description: "taxa de desconto do produto na venda"
             
              - name: modified_date
                data_type: date
-               description: ""
+               description: "data de modificação da linha"

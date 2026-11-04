@@ -1,14 +1,14 @@
  models:
          - name: fct_sales
-           description: ""
+           description: "Tabela fato de vendas"
            columns:
              - name: pk_sales
                data_type: int
-               description: ""
+               description: "Chave primária"
        
              - name: fk_salesorder
                data_type: int
-               description: ""
+               description: "Chave estrangeira da dimensão de pedidos"
                data_tests:
                  - relationships:
                       arguments: 
@@ -17,7 +17,7 @@
        
              - name: fk_product
                data_type: int
-               description: ""
+               description: "Chave estrangeira da dimensão de produtos"
                data_tests:
                  - relationships:
                       arguments: 
@@ -26,7 +26,7 @@
        
              - name: fk_customer
                data_type: int
-               description: ""
+               description: "Chave estrangeira da dimensão de clientes"
                data_tests:
                   - relationships:
                         arguments:
@@ -35,7 +35,7 @@
              
              - name: fk_creditcard
                data_type: int
-               description: ""
+               description: "Chave estrangeira da dimensão de cartões"
                data_tests:
                   - relationships:
                         arguments:
@@ -44,7 +44,7 @@
 
              - name: fk_order_date
                data_type: int
-               description: ""
+               description: "Chave estrangeira da data do pedido"
                data_tests:
                  - relationships: 
                       arguments: 
@@ -53,7 +53,7 @@
        
              - name: fk_ship_date
                data_type: int
-               description: ""
+               description: "Chave estrangeira da data de entrega"
                data_tests:
                  - relationships: 
                       arguments: 
@@ -63,7 +63,7 @@
        
              - name: fk_due_date
                data_type: int
-               description: ""
+               description: "Chave estrangeira do prazo"
                data_tests:
                  - relationships: 
                       arguments: 
@@ -73,7 +73,7 @@
        
              - name: fk_ship_to_address
                data_type: int
-               description: ""
+               description: "Chave estrangeira do endereço de entrega"
                data_tests:
                  - relationships: 
                       arguments: 
@@ -82,7 +82,7 @@
        
              - name: fk_bill_to_address
                data_type: int
-               description: ""
+               description: "Chave estrangeira do endereço de cobrança"
                data_tests:
                  - relationships: 
                       arguments: 
@@ -91,52 +91,52 @@
              
              - name: order_date
                data_type: date
-               description: ""
+               description: "Data de pedido"  
 
              - name: ship_date
                data_type: date
-               description: ""  
+               description: "Data de entrega"
 
              - name: due_date
                data_type: date
-               description: ""  
+               description: "Prazo de entrega"  
        
              - name: order_qty
                data_type: bigint
-               description: ""
+               description: "Quantidade comoprada do produto na venda"
        
              - name: unit_price
                data_type: double
-               description: ""
+               description: "Preço unitário do produto"
        
              - name: gross_price
                data_type: double
-               description: ""
+               description: "Valor negociado do produto na venda"
        
              - name: unit_price_discount
                data_type: double
-               description: ""
+               description: "Desconto do produto na venda"
        
              - name: unit_price_discount_pct
                data_type: double
-               description: ""
+               description: "Porcentagem de desconto do produto na venda"
        
              - name: net_price
                data_type: double
-               description: ""
+               description: "Preço líquido do produto na venda"
        
              - name: freight
                data_type: double
-               description: ""
+               description: "Valor do frete"
        
              - name: tax
                data_type: double
-               description: ""
+               description: "Valor da taxa"
        
              - name: total_price
                data_type: double
-               description: ""
+               description: "Preço total do produto na venda"
 
              - name: modified_date
                data_type: date
-               description: ""
+               description: "Data de modificação da linha"

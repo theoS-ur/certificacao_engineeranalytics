@@ -1,11 +1,11 @@
 models:
          - name: stg_erp__productcategory
-           description: ""
+           description: "Tabela que contém a categoria dos produtos"
            columns:
              - name: pk_productcategory
                data_type: int
-               description: ""
+               description: "Chave primária"
        
              - name: productcategory_name
                data_type: string
-               description: ""
+               description: "Nome da categoria"

@@ -1,15 +1,15 @@
 models:
-         - name: dim_customer
-           description: ""
-           columns:
-             - name: pk_customer
-               data_type: int
-               description: ""
-       
-             - name: person_id
-               data_type: int
-               description: ""
-       
-             - name: person_name
-               data_type: string
-               description: ""
+  - name: dim_customer
+    description: "Dimensão de clientes"
+    columns:
+      - name: pk_customer
+        data_type: int
+        description: "Chave primária"
+
+      - name: person_id
+        data_type: int
+        description: "Id da pessoa"
+
+      - name: person_name
+        data_type: string
+        description: "Nome da pessoa"

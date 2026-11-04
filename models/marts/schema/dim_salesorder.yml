@@ -1,15 +1,15 @@
 models:
          - name: dim_salesorder
-           description: ""
+           description: "Dimensão de pedidos"
            columns:
              - name: pk_salesorder
                data_type: int
-               description: ""
+               description: "Chave primária"
        
              - name: order_status
                data_type: bigint
-               description: ""
+               description: "Status da ordem"
        
              - name: is_online
                data_type: boolean
-               description: ""
+               description: "Verifica se a compra é online"
