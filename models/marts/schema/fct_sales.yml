@@ -49,7 +49,7 @@
                  - relationships: 
                       arguments: 
                         to: ref('dim_date')
-                        field: pk_data
+                        field: pk_date
        
              - name: fk_ship_date
                data_type: int
@@ -58,7 +58,7 @@
                  - relationships: 
                       arguments: 
                        to: ref('dim_date')
-                       field: pk_data
+                       field: pk_date
        
        
              - name: fk_due_date
@@ -68,7 +68,7 @@
                  - relationships: 
                       arguments: 
                        to: ref('dim_date')
-                       field: pk_data
+                       field: pk_date
        
        
              - name: fk_ship_to_address
