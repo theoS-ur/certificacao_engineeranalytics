@@ -37,6 +37,7 @@ with
                 /sum(salesorderdetail.unitprice*salesorderdetail.orderqty*(1-salesorderdetail.unitpricediscount)) over (partition by salesorderdetail.fk_salesorderheader))
                  as freight
             ,salesorderheader.taxamt * (salesorderdetail.unitprice*salesorderdetail.orderqty*(1-salesorderdetail.unitpricediscount))/salesorderheader.subtotal as tax
+            ,salesorderdetail.modified_date as modified_date
         
         from salesorderdetail
         left join salesorderheader on salesorderdetail.fk_salesorderheader = salesorderheader.pk_salesorderheader
