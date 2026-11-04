@@ -13,6 +13,7 @@ with
             ,orderqty
             ,unitprice
             ,unitpricediscount
+            ,cast(modifieddate as date) as modified_date
         from salesorderdetail
             
     )

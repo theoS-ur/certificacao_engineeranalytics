@@ -29,3 +29,7 @@
              - name: unitpricediscount
                data_type: double
                description: ""
+            
+             - name: modified_date
+               data_type: date
+               description: ""
