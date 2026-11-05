@@ -7,16 +7,13 @@ with
         select *
         from{{ref('stg_erp__salesorderheader')}}
     )
-    ,int_dimensao_customer as (
-        select *
-        from{{ref('int_dimensao_customer')}}
-    )
+
     , salesorderdetail_calculado as (
         select
             salesorderdetail.pk_salesorderdetail as pk_sales            
             ,salesorderdetail.fk_salesorderheader as fk_salesorder
             ,salesorderdetail.fk_product as fk_product
-            ,coalesce(int_dimensao_customer.pk_customer, -1) as fk_customer
+            ,salesorderheader.fk_customer fk_customer
             ,salesorderheader.fk_creditcard as fk_creditcard
             ,cast(date_format(salesorderheader.order_date, 'yyyyMMdd') as int) as fk_order_date
             ,coalesce(cast(date_format(salesorderheader.ship_date, 'yyyyMMdd') as int),-1) as fk_ship_date
@@ -41,7 +38,7 @@ with
         
         from salesorderdetail
         left join salesorderheader on salesorderdetail.fk_salesorderheader = salesorderheader.pk_salesorderheader
-        left join int_dimensao_customer on salesorderheader.fk_customer = int_dimensao_customer.pk_customer
+        
 
     )
     , salesorderdetail_enriquecido as(
