@@ -5,6 +5,9 @@ models:
              - name: pk_salesorder
                data_type: int
                description: "Chave primária"
+               data_tests:
+                 - unique
+                 - not_null
        
              - name: order_status
                data_type: bigint

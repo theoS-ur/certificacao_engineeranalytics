@@ -8,13 +8,6 @@ with
         select *
         from {{ref('stg_erp__person')}}
     )
-    ,customer_desconhecido as (
-        select 
-            -1 as pk_customer
-            ,-1 as person_id
-            ,'Não Cadastrado' as person_name
-
-    )
     
     , customer_enriquecido as(
         select

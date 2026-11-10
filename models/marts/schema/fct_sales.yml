@@ -5,11 +5,17 @@
              - name: pk_sales
                data_type: int
                description: "Chave primária"
+               data_tests:
+                 - unique
+                 - not_null
        
              - name: fk_salesorder
                data_type: int
                description: "Chave estrangeira da dimensão de pedidos"
                data_tests:
+                 - unique
+                 - not_null
+                 
                  - relationships:
                       arguments: 
                         to: ref('dim_salesorder')

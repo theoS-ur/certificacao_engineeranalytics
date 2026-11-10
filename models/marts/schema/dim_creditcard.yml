@@ -5,7 +5,9 @@ models:
       - name: pk_creditcard
         data_type: int
         description: "Chave primária"
-
+        data_tests:
+                 - unique
+                 - not_null
       - name: card_type
         data_type: string
         description: "Tipo do cartão"
