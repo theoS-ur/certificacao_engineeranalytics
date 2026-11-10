@@ -5,6 +5,9 @@ models:
              - name: pk_sales_reason
                data_type: int
                description: "Cahve primária"
+               data_tests:
+                 - unique
+                 - not_null
        
              - name: sales_reason_name
                data_type: string

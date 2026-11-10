@@ -13,7 +13,7 @@ with
             ,cast(shiptoaddressid as int) as fk_shiptoaddress
             ,cast(orderdate as date) as order_date
             ,cast(duedate as date) as due_date
-            ,cast(orderdate as date) as ship_date
+            ,cast(shipdate as date) as ship_date
             ,salesorderheader.status as order_status
             ,onlineorderflag
             ,subtotal

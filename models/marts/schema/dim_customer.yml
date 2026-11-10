@@ -5,6 +5,9 @@ models:
       - name: pk_customer
         data_type: int
         description: "Chave primária"
+        data_tests:
+                 - unique
+                 - not_null
 
       - name: person_id
         data_type: int

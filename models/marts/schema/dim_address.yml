@@ -5,6 +5,9 @@ models:
       - name: pk_address
         data_type: int
         description: "Cahve primária"
+        data_tests:
+                 - unique
+                 - not_null
 
       - name: full_address
         data_type: string
